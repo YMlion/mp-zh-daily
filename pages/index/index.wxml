@@ -1,0 +1,22 @@
+<!-- index.wxml -->
+<view class="page">
+  <!-- <view class="page-section page-section-spacing swiper">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+      <block wx:for="{{topStories}}" wx:key="*this.id">
+        <swiper-item>
+          <image class="swiper-item" src='{{item.image}}'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view> -->
+  <view class="weui-cells" wx:for="{{stories}}" wx:for-item="story" wx:key="story.id">
+    <navigator url="/pages/detail/detail?id={{story.id}}" class="weui-media-box weui-media-box_appmsg w3-card-4" hover-class="weui-cell_active">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+        <image class="weui-media-box__thumb" src="{{story.images[0]}}" />
+      </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <text>{{story.title}}</text>
+      </view>
+    </navigator>
+  </view>
+</view>

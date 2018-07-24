@@ -1,0 +1,23 @@
+@import "../../wxParse/wxParse.wxss";
+
+.container-html {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.detail-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: white;
+  padding: 15px;
+}
+
+.detail-footer:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1rpx solid #D9D9D9;
+}
