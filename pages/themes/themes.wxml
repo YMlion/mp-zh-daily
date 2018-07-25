@@ -1,0 +1,8 @@
+<!--pages/themes/themes.wxml-->
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-cells" wx:for="{{themes}}" wx:for-item="theme" wx:key="theme.id">
+      <itemDesc title="{{theme.name}}" desc="{{theme.description}}" thumbnail="{{theme.thumbnail}}" navUrl="/pages/newsList/newsList?theme=ture&id={{theme.id}}&title={{theme.name}}"></itemDesc>
+    </view>
+  </view>
+</view>

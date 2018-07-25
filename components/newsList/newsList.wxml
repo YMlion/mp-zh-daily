@@ -1,0 +1,12 @@
+<!--components/newsList/newsList.wxml-->
+<view class="weui-cells" wx:for="{{list}}" wx:key="{{*this}}">
+  <navigator url="{{navUrl}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+      <image class="weui-media-box__thumb" src="{{thumbnail}}" />
+    </view>
+    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+      <view class="weui-media-box__title">{{title}}</view>
+      <view class="weui-media-box__desc">{{desc}}</view>
+    </view>
+  </navigator>
+</view>

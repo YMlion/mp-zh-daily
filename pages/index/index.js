@@ -4,14 +4,14 @@ const app = getApp()
 
 Page({
   data: {
-    indicatorDots: true,
-    vertical: false,
-    autoplay: false,
-    circular: false,
-    interval: 2000,
-    duration: 500,
-    previousMargin: 0,
-    nextMargin: 0,
+    // indicatorDots: true,
+    // vertical: false,
+    // autoplay: false,
+    // circular: false,
+    // interval: 2000,
+    // duration: 500,
+    // previousMargin: 0,
+    // nextMargin: 0,
     stories: []
   },
   //事件处理函数

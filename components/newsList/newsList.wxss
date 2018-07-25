@@ -1,0 +1,2 @@
+/* components/newsList/newsList.wxss */
+@import "../../style/weui.wxss";

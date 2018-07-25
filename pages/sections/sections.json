@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "itemDesc": "../../components/itemDesc/itemDesc"
+  }
+}

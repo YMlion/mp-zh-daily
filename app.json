@@ -1,13 +1,48 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/themes/themes",
+    "pages/sections/sections",
+    "pages/about/about",
+    "pages/newsList/newsList"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "知乎日报",
-    "navigationBarTextStyle":"black",
+    "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#0085FE",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "最新",
+        "iconPath": "/image/ic_hot.png",
+        "selectedIconPath": "/image/ic_hot_hl.png"
+      },
+      {
+        "pagePath": "pages/themes/themes",
+        "text": "主题",
+        "iconPath": "/image/ic_themes.png",
+        "selectedIconPath": "/image/ic_themes_hl.png"
+      },
+      {
+        "pagePath": "pages/sections/sections",
+        "text": "板块",
+        "iconPath": "/image/ic_sections.png",
+        "selectedIconPath": "/image/ic_sections_hl.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "/image/ic_about.png",
+        "selectedIconPath": "/image/ic_about_hl.png"
+      }
+    ]
   }
 }

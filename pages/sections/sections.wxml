@@ -1,0 +1,8 @@
+<!--pages/sections/sections.wxml-->
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-cells" wx:for="{{sections}}" wx:for-item="section" wx:key="section.id">
+      <itemDesc title="{{section.name}}" desc="{{section.description}}" thumbnail="{{section.thumbnail}}" navUrl="/pages/newsList/newsList?id={{section.id}}&title={{section.name}}"></itemDesc>
+    </view>
+  </view>
+</view>

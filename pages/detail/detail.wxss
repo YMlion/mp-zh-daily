@@ -3,6 +3,7 @@
 .container-html {
   padding-left: 16px;
   padding-right: 16px;
+  padding-bottom: 70rpx;
 }
 .detail-footer {
   position: fixed;
