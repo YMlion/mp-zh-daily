@@ -33,6 +33,8 @@ Page({
         }
         
         that.setData({
+          descBg: res.data.image | false,
+          partDesc: res.data.description | null,
           stories: res.data.stories
         })
       },

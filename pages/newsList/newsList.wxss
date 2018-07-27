@@ -2,7 +2,6 @@
 @import "../../style/weui.wxss";
 
 .w3-code {
-  font-family: Consolas, "courier new";
   font-size: 16px;
   line-height: 1.4;
   width: auto;
@@ -26,4 +25,22 @@
 
 .w3-card-4, .w3-hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.top-container {
+  width: 100%;
+  position: relative;
+}
+
+.top-bg {
+  width: 100%;
+}
+
+.top-desc {
+  color: white;
+  font-size: small;
+  position: fixed;
+  z-index: 100;
+  margin-top: 200rpx;
+  margin-left: 15px;
 }

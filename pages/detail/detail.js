@@ -21,6 +21,20 @@ Page({
         WxParse.wxParse('detail', 'html', res.data.body, that, 50);
       }
     })
+    wx.request({
+      url: 'https://news-at.zhihu.com/api/4/story-extra/' + options.id,
+      success: function(res) {
+        console.log(res)
+        if (res.statusCode != 200) {
+          console.log('load error.')
+          return
+        }
+        that.setData({
+          popularity: res.data.popularity,
+          comments: res.data.comments
+        })
+      }
+    })
   },
 
   onPullDownRefresh: function () {

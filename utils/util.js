@@ -14,6 +14,18 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+const getLastDay = num => {
+  const date = new Date()
+  const time = date.getTime() - num * 24 * 3600000
+  const newDate = new Date(time)
+  const y = newDate.getFullYear()
+  const m = newDate.getMonth() + 1
+  const d = newDate.getDate()
+
+  return [y, m, d].map(formatNumber).join('')
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  getLastDay: getLastDay
 }

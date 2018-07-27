@@ -22,3 +22,8 @@
   height: 1px;
   border-top: 1rpx solid #D9D9D9;
 }
+
+.comment {
+  float: right;
+  margin-right: 40px;
+}

@@ -12,10 +12,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.setNavigationBarTitle({
+      title: '栏目',
+    })
     var that = this
     wx.request({
       url: 'https://news-at.zhihu.com/api/3/sections',
-      success: function(res) {
+      success: res => {
         console.log(res)
         if (res.statusCode != 200) {
           console.log('load error.')

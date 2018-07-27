@@ -4,6 +4,7 @@
     <template is="wxParse" data="{{wxParseData:detail.nodes}}" />
   </view>
   <view class="detail-footer">
-    <view>123</view>
+    <text>{{popularity}}</text>
+    <text class='comment'>{{comments}}</text>
   </view>
 </view>

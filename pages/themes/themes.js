@@ -12,6 +12,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.setNavigationBarTitle({
+      title: '主题',
+    })
     var that = this
     wx.request({
       url: 'https://news-at.zhihu.com/api/4/themes',
